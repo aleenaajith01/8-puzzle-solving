@@ -1,1 +1,1 @@
-# 8-puzzle-solving
+# 8-Puzzle-Game

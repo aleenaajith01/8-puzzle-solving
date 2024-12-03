@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>8 PUZZLE</h1>
+    <canvas id="gridCanvas" class="gridCanvas" width="300" height="300"></canvas>
+    <p id="stopwatch">Duration : 00:00:00</p> 
+    <p id="count-Down">Remaining Time: 01:00</p>
+
+    <!-- start banner -->
+    <section id="start-banner" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <h2>Let's Play</h2>
+        <button id = "normal">Normal Mode</button>
+        <button id ="challenge">Challenge Mode</button>
+    </section>
+    
+    <!-- success banner challenge Mode -->
+    <section id="suceess-challenge" style="display: none;">
+        <img id="successImage" src="winImage.png" alt="Success!">
+        <canvas id="gridShuffleCanvas" width="150" height="150" style="border: 1px solid black;"></canvas>
+        <h3 id = "heading1">Wow! win</h3>
+        <h4 id = "remain-time">Remaining Time</h4>
+        <button id="play-again">Start Play</button>
+    </section>
+
+    <!-- failure banner -->
+    <section id="failure-modal" style="display: none;">
+        <img id="failureImage" src="failureImage.png" alt="Failed">
+        <h2 id="heading2">Sorry!! Times Up</h2>
+        <button id="playagain-button">Try Again</button>
+    </section>
+
+    <script src ="puzzle_creation.js"></script>
+    <script src ="puzzle_swaping.js"></script>
+    <script src ="Baners.js"></script>
+    <script src ="time_implementation.js"></script>
+    <script src ="replay_movement.js"></script>
+    <script src ="time_restriction.js"></script>
+    <script src="game_mode.js"></script>
+</body>
+</html>
